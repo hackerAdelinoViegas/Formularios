@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt">
- <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <title>Form</title>
- </head>
- <body>
-  <p>Texto de referência</p>
- </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <div class="scorecard">
+      <div class="scorecard__panel scorecard__panel--result">
+        <h4 class="scorecard__title">Your Result</h4>
+        <div class="scorecard__score">
+          <span class="scorecard__score-value">76</span>
+          <span class="scorecard__score-max">of 100</span>
+        </div>
+        <h2 class="scorecard__remark">Great</h2>
+        <p class="scorecard__text">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <div class="scorecard__panel scorecard__panel--summary">
+        <h2 class="scorecard__title">Summary</h2>
+
+        <div class="scorecard__category scorecard__category--reaction">
+          <span class="scorecard__label">Reaction</span>
+          <span class="scorecard__value">80 / 100</span>
+        </div>
+
+        <button class="scorecard__button">Continue</button>
+      </div>
+    </div>
+  </body>
 </html>
