@@ -78,6 +78,9 @@ body {
 }
 
 .scorecard .scorecard__panel--summary{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 18px;
   font-size: 13px;
   font-weight: bold;
@@ -96,7 +99,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0px;
+  margin: 18px 0px;
   padding: 8px 4px;
   border-radius: 10px;
 }
@@ -145,4 +148,13 @@ body {
 
 .scorecard .scorecard__panel--summary .scorecard__value2{
   color: #a09da4;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__button{
+  width: 100%;
+  background-color: #303b59;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 8px 0px;
+  cursor: pointer; 
 }
