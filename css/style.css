@@ -5,7 +5,14 @@
   box-sizing: border-box;
 }
 
+/*Fontes para o projecto*/
+@font-face {
+  font-family: 'HG';
+  src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf'),
+}
+
 body {
+  font-family: HG;
   background-color: #ecf2ff;
 }
 
@@ -15,8 +22,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 10px;
-  border: 1px solid;
   text-align: center;
 }
 
@@ -27,7 +32,8 @@ body {
 
 .scorecard .scorecard__panel--result {
   background: linear-gradient(to bottom, #6743ff, #4835f1, #3c31ed);
-  border-radius: 12px 0px 0px 12px;
+  border-radius: 12px;
+  padding: 26px;
 }
 
 .scorecard .scorecard__panel--summary {
@@ -41,7 +47,102 @@ body {
   justify-content: center;
   width: 130px;
   height: 130px;
-  margin: 0 auto;
-  background-color: #4927d3;
+  margin: 20px auto;
+  background: linear-gradient(to bottom, #4a26d0, #462ede, #4734ee);
   border-radius: 50%;
+}
+
+.scorecard .scorecard__panel--result .scorecard__title {
+  color: #d0bfff;
+}
+
+.scorecard .scorecard__score .scorecard__score-value {
+  font:bold 40px HG;
+  color: #ffffff;
+}
+
+.scorecard .scorecard__score .scorecard__score-max {
+  color: #d0bfff;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.scorecard .scorecard__panel--result .scorecard__remark {
+  color: #ffffff;
+}
+
+.scorecard .scorecard__panel--result .scorecard__text {
+  color: #d0bfff;
+  font-size: 12px;
+  padding: 12px;
+}
+
+.scorecard .scorecard__panel--summary{
+  padding: 18px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__title{
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__category--reaction,
+.scorecard .scorecard__panel--summary .scorecard__category--memory,
+.scorecard .scorecard__panel--summary .scorecard__category--verbal,
+.scorecard .scorecard__panel--summary .scorecard__category--visual{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding: 8px 4px;
+  border-radius: 10px;
+}
+ 
+.scorecard .scorecard__panel--summary .scorecard__category--reaction{
+  background-color: #fff6f7;
+  color: #FF5555;
+}
+
+.scorecard .scorecard__category--reaction .scorecard__category-info,
+.scorecard .scorecard__category--memory .scorecard__category-info,
+.scorecard .scorecard__category--verbal .scorecard__category-info,
+.scorecard .scorecard__category--visual .scorecard__category-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.scorecard .scorecard__category--reaction .scorecard__category-info img, 
+.scorecard .scorecard__category--memory .scorecard__category-info img,
+.scorecard .scorecard__category--verbal .scorecard__category-info img,
+.scorecard .scorecard__category--visual .scorecard__category-info img {
+  width: 15px;
+  height: 15px;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__category--memory{
+  background-color: #fffaf4;
+  color: #FFC048;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__category--verbal{
+  background-color: #f2fdf9;
+  color: #39CAA8;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__category--visual{
+  background-color: #f4f4fe;
+  color: #5964E0;
+}
+
+.scorecard .scorecard__categories .scorecard__value1{
+  color: #000000;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__value2{
+  color: #a09da4;
 }
