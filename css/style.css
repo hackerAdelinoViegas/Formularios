@@ -155,6 +155,13 @@ body {
   background-color: #303b59;
   color: #ffffff;
   border-radius: 16px;
-  padding: 8px 0px;
-  cursor: pointer; 
+  padding: 12px 0px;
+  cursor: pointer;
+  border: none;
+  transition: .5s;
+}
+
+.scorecard .scorecard__panel--summary .scorecard__button:hover{
+ background: linear-gradient(to bottom, #6743ff, #4835f1, #3c31ed);
+
 }
